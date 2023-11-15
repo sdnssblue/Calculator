@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" Padding="20" VerticalOptions="CenterAndExpand">
+        <Frame Padding="15" Margin="0,0,0,50">
+            <Label x:Name="LabelResult"
+               Text="0"
+               TextColor="Black"
+               FontSize="36"
+               FontAttributes="Bold"
+               HorizontalOptions="End">
+            </Label>
+        </Frame>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Ряд 1 -->
+            <Button CornerRadius="100"
+                Grid.Row="0"
+                Grid.Column="0" 
+                Text="C"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                x:Name="ButtonClear"
+                Clicked="ButtonClear_Clicked"/>
+            <Button CornerRadius="100"
+                Grid.Row="0"
+                Grid.Column="1" 
+                Text="/"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                Clicked="ButtonCommonOperation_Clicked"/>
+            <Button CornerRadius="100"
+                Grid.Row="0"
+                Grid.Column="2" 
+                Text="*"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                Clicked="ButtonCommonOperation_Clicked"/>
+            <Button CornerRadius="100"
+                Grid.Row="0"
+                Grid.Column="3" 
+                Text="X"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                x:Name="ButtonX"
+                Clicked="ButtonX_Clicked"/>
+
+            <!-- Ряд 2 -->
+            <Button CornerRadius="100"
+                Grid.Row="1"
+                Grid.Column="0" 
+                Text="7"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                Clicked="ButtonCommon_Clicked"/>
+            <Button CornerRadius="100"
+                Grid.Row="1"
+                Grid.Column="1" 
+                Text="8"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                Clicked="ButtonCommon_Clicked"/>
+            <Button CornerRadius="100"
+                Grid.Row="1"
+                Grid.Column="2" 
+                Text="9"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                Clicked="ButtonCommon_Clicked"/>
+            <Button CornerRadius="100"
+                Grid.Row="1"
+                Grid.Column="3" 
+                Text="-"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                Clicked="ButtonCommonOperation_Clicked"/>
+
+            <!-- Ряд 3 -->
+            <Button CornerRadius="100" 
+                Grid.Row="2"
+                Grid.Column="0" 
+                Text="4"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                Clicked="ButtonCommon_Clicked"/>
+            <Button CornerRadius="100" 
+                Grid.Row="2"
+                Grid.Column="1" 
+                Text="5"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                Clicked="ButtonCommon_Clicked"/>
+            <Button CornerRadius="100" 
+                Grid.Row="2"
+                Grid.Column="2" 
+                Text="6"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                Clicked="ButtonCommon_Clicked"/>
+            <Button CornerRadius="100" 
+                Grid.Row="2"
+                Grid.Column="3" 
+                Text="+"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                Clicked="ButtonCommonOperation_Clicked"/>
+
+            <!-- Ряд 4 -->
+            <Button CornerRadius="100" 
+                Grid.Row="3"
+                Grid.Column="0" 
+                Text="1"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                Clicked="ButtonCommon_Clicked"/>
+            <Button CornerRadius="100" 
+                Grid.Row="3"
+                Grid.Column="1" 
+                Text="2"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                Clicked="ButtonCommon_Clicked"/>
+            <Button CornerRadius="100" 
+                Grid.Row="3"
+                Grid.Column="2" 
+                Text="3"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                Clicked="ButtonCommon_Clicked"/>
+            <Button CornerRadius="10" 
+                Grid.Row="3"
+                Grid.Column="3" 
+                Grid.RowSpan="2"
+                Text="="
+                BackgroundColor="LightBlue"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                x:Name="ButtonEqual"
+                Clicked="ButtonEqual_Clicked"/>
+
+            <!-- Ряд 5 -->
+            <Button CornerRadius="100" 
+                Grid.Row="4"
+                Grid.Column="0" 
+                Text="%"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                x:Name="ButtonPercentage"
+                Clicked="ButtonPercentage_Clicked"/>
+            <Button CornerRadius="100" 
+                Grid.Row="4"
+                Grid.Column="1" 
+                Text="0"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                Clicked="ButtonCommon_Clicked"/>
+            <Button CornerRadius="100" 
+                Grid.Row="4"
+                Grid.Column="2" 
+                Text=","
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="3"
+                Clicked="ButtonCommon_Clicked"/>
+
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
